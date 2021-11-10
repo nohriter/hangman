@@ -9,7 +9,7 @@ public class Player {
         this.life = DEFAULT_LIFE;
     }
 
-    public void reduceLife(){
+    public void reduceLife() {
         life--;
     }
 

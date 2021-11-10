@@ -22,8 +22,40 @@ public class Problem {
     public void createEmptyAnswer(String answer) {
         emptyAnswer = new char[answer.length()];
 
-        for(int i=0; i < answer.length(); i++) {
+        for (int i = 0; i < answer.length(); i++) {
             emptyAnswer[i] = '_';
         }
+    }
+
+    public void appendAlphabet(char c, int i) {
+        this.emptyAnswer[i] = c;
+    }
+
+    public void removeAlphabet(char c) {
+        this.alphabets[c - 97] = '#';
+    }
+
+    public char[] getEmptyAnswer() {
+        return emptyAnswer;
+    }
+
+    public char[] getAlphabets() {
+        return alphabets;
+    }
+
+    public Problem getProblem() {
+        return this;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public String getExplanation() {
+        return explanation;
+    }
+
+    public String getHint() {
+        return hint;
     }
 }

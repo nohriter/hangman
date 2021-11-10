@@ -1,6 +1,7 @@
 package hangman;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Problems {
@@ -18,6 +19,8 @@ public class Problems {
 
         problems = List.of(apple, subway, dog, soccer, kimchi, teacher);
 
+            //TODO: 섞어야 함. (에러발생)
+//        Collections.shuffle(problems);
     }
 
     public List<Problem> getProblems() {
